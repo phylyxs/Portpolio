@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us-Page</title>
+    <link rel="stylesheet" href="AboutUsPageStyle.css">
+    <!--Call the Header and Footer-->
+    <script src="../Header and Footer/main.js"></script>
+    
+    
+    
+    
+</head>
+<body>
+  <!--Header-->
+  <my-header></my-header>
+  
+  <div id="content" style="text-decoration: none; background-image: url('AboutUs pictures/coffee-doodle.jpg');">
+    <div id="empty-space"></div>
+  <p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12610.758442746936!2d175.2814543380047!3d-37.79731326894422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18a57fa16281%3A0x72b05e2e8812d179!2sWaikato%20Institute%20of%20Technology%2C%20City%20Campus!5e0!3m2!1sen!2snz!4v1616060994358!5m2!1sen!2snz" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </p>
+
+
+
+  <div id="popup">
+  <center><h1> Thank you!</h1></center>
+  <br><br>
+  <center><button type="button" onclick="showpop();">Ok</button></center>
+  </div>
+
+  <div id="popup1">
+    <center><h1> Are you sure you want to do this?</h1></center>
+    <br><br>
+    <center><button type="button" onclick="showpop1();resetInfo();">OK</button>
+    <button type="button" onclick="showpop1();">Cancel</button></center>
+    </div>
+
+  <div id="popup2">
+      <center><h1> Do you want to send this message?</h1></center>
+      <br><br>
+      <center><button type="button" onclick="showpop2();resetInfo();showpop();">Ok</button>
+      <button type="button" onclick="showpop2();">Cancel  </button></center>
+      </div>
+
+  
+  <div class="row">
+    <div class="column left">
+      <p class="p1">
+        <h2>Our Contact Details</h2>
+        <br>
+      </p>
+      
+      <p>
+        <strong>Address:</strong>
+        <br>Tristram Street, Hamilton Central, Hamilton 3200
+      </p>
+      <p>
+        <strong>Phone:</strong>
+        <br>07-838 6399
+      </p>
+      <p>
+        <strong>Open</strong>
+        <br>Mon 6:30am ~ 3pm
+        <br>Tue 6:30am ~ 3pm
+        <br>Wed 6:30am ~ 3pm
+        <br>Thr 6:30am ~ 3pm
+        <br>Fri 6:30am ~ 3pm
+        
+      </p>
+      <p>
+        <strong>Close</strong>
+        <br>Every Saterday, Sunday & Public Holiday
+      </p>
+    </div>
+    </div>
+    
+    
+    <div class="row" style="background-color: white;">
+      <div class="column right">
+    <p><h1>About Us</h1><br></p>
+    <p><strong>Our History</strong></p>
+    <p>There were three young men who traveled around the world. They all came across and liked coffee and food, so they decided to make a coffee and food web page. They wanted to move on to the wider world and do their best in every  moment.</p>
+    <br>
+    <p><strong>Our Value</strong></p>
+    <p>There are many things that give you the power to live in the world. The first thing that comes to mind is family and friends. So our first priority is to provide our customers with coffee and food like family and friends that give them strength to live..</p>
+    <br>
+    <p><h1>Get in Touch with Us</h1></p>
+    <p>Share your thoughts! We welcome all questions, comments and feedback</p>
+    
+    <div style="background-color: white;">
+        Your name<br>
+        <input type="text" id="name" name ="name"><br>
+        <span id="nameerror" style="color: red;"></span><br>
+        Your Email<br>
+        <input type="email" id="email" name ="mail"><br>
+        <span id="emailerror" style="color: red;"></span><br>
+        Your Message<br>
+        <textarea id="message" name =message></textarea><br>
+        <span id="messageerror" style="color: red;"></span>
+        
+        <br> 
+        <center>
+        <button type="button" onclick="chekcInfo();">Send</button>
+        <button type="button" onclick="showpop1(); ">Reset</button>             
+        </center>
+      </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <!--Footer-->
+  <my-footer></my-footer>
+    <script src="AboutUsPage.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+#empty-space{
+  width: 100%; /*this is the first layer*/
+  height:130px;
+}
+/* Thnak you message  */
+#popup
+{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+#popup.active
+{
+    top: 40%;  
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* confirm message for the reset button */
+#popup1
+{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+#popup1.active
+{
+    top: 40%;  
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* confirm message for the send button */
+#popup2
+{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+#popup2.active
+{
+    top: 40%;  
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+/*Content*/
+.column {
+  font-family: "Montserrat", sans-serif;
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+textarea{
+  height: 100px;
+  width: 600px;
+}
+
+
+button{
+    padding: 9px 15px;
+    background-color: rgb(0, 255, 255, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+
+}
+
+button:hover{
+    background-color: rgb(0, 255, 255, 0.1);
+}
+
+#content{
+  height: 1390px;
+  padding: 145px 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

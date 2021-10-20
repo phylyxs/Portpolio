@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+    <link rel="stylesheet" href="home-style.css"> 
+    <!--Call the Header and Footer-->
+    <script src="../Header and Footer/main.js"></script>
+</head>
+<body>
+  <!--Header-->
+  <my-header></my-header>
+
+  <!--Stick header-->
+  <div id="empty-space"></div>
+  
+  <!--Slideshow-->
+<div id="content">
+  <div class="slideshow-container" >  
+
+    <!--Promo slide 1
+    'fade' - is a CSS effect for the picture-->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <a href="..\Promo-page\promo-page.html">
+        <img src=".\Slideshow Pictures\Promo 1.PNG" style="width:100%">
+      </a>
+    </div>
+    
+    <!--Promo slide 2-->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <a href="..\Promo-page\promo-page.html">
+        <img src=".\Slideshow Pictures\Promo 2.png" style="width:100%">
+    </a>
+    </div>
+    
+    <!--Promo slide 3-->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <a href="..\Promo-page\promo-page.html">
+      <img src=".\Slideshow Pictures\Promo 3.png" style="width:100%">
+      </a>
+    </div>
+    
+
+    <!--Prev and Next arrows-->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    </div>
+    <br>
+    
+    <!--Circles that indicate the current slide-->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  </div>
+  
+
+  <!--3 column x 1 row flexbox-->
+  <div class="flex-container" style="background:transparent;">
+    <div class="item">
+      <a href="..\Menu-page\menu-coffee.html"> <img id="products" src=".\HomePage Pictures\Americano1.jpg"></a>
+    </div>
+    <div class="item">
+      <a href="..\Menu-page\menu-food.html"> <img id="products" src=".\HomePage Pictures\CakeSlice1.jpg"></a>
+    </div>
+    <div class="item">
+      <a href="..\Menu-page\menu-coffee.html"><img id="products" src=".\HomePage Pictures\CafeLatte1.jpg" alt=""></a>
+    </div>  
+  </div>
+
+  <!--3 column x 1 row flexbox-->
+  <div class="flex-container" style="background:transparent;">
+    <div class="item">
+      <a href="..\Menu-page\menu-food.html"><img id="products" src=".\HomePage Pictures\Waffle1.jpg" alt="coffee1"></a>
+    </div>
+    <div class="item">
+      <a href="..\Menu-page\menu-coffee.html"><img id="products" src=".\HomePage Pictures\flatwhite1.jpg" alt=""></a>
+    </div>
+    <div class="item">
+      <a href="..\Menu-page\menu-food.html"><img id="products" src=".\HomePage Pictures\CinnamonRoll1.jpg" alt=""></a>
+    </div>
+  </div>
+</div>
+
+<div class="TermsAndConditions">
+  <h1 style="font-size: 23px;">Terms and Conditions</h1>
+  <p id="tccontent">
+    <br>
+    <p style="font-weight: bold;">Introduction</p> 
+    <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Coffee and Food Shop accessible at CoffeeandFoodShop.com.
+    These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions. These Terms and Conditions have been generated with the help of the Terms and Conditions Sample and the Privacy Policy Generator.
+    Minors or people below 18 years old are not allowed to use this Website.</p> 
+    <br>
+    <p style="font-weight: bold;">Intellectual Property Rights</p> 
+    <p>Other than the content you own, under these Terms, Coffee and Food Shop and/or its licensors own all the intellectual property rights and materials contained in this Website.
+    You are granted limited license only for purposes of viewing the material contained on this Website.</p> 
+    <br>
+    <p style="font-weight: bold;">Restrictions</p> 
+    <p>You are specifically restricted from all of the following:</p> 
+    <p>
+    <ul style="font-weight: lighter; background-color: transparent;">
+      <li style="background-color: transparent; color: #fff;">●	publishing any Website material in any other media;</li>
+      <li style="background-color: transparent; color: #fff;">●	selling, sublicensing and/or otherwise commercializing any Website material;</li>
+      <li style="background-color: transparent; color: #fff;">●	publicly performing and/or showing any Website material;</li>
+      <li style="background-color: transparent; color: #fff;">●	using this Website in any way that is or may be damaging to this Website;</li>
+      <li style="background-color: transparent; color: #fff;">●	using this Website in any way that impacts user access to this Website;</li>
+    </ul>
+    </p>
+    <p style="font-weight: bold;">Entire Agreement</p> 
+    <p>These Terms constitute the entire agreement between Coffee and Food Shop and you in relation to your use of this Website, and supersede all prior agreements and understandings.</p> 
+    <br>
+    <p style="font-weight: bold;">Governing Law & Jurisdiction</p> 
+    <p>These Terms will be governed by and interpreted in accordance with the laws of the State of New Zealand, and you submit to the non-exclusive jurisdiction of the state and federal courts located in New Zealand for the resolution of any disputes.
+    </p>   
+  </p>
+</div>
+
+<!--Footer-->
+<my-footer></my-footer>
+<!--Slide function-->
+<script src="home-app.js"></script>
+</div>
+</body>
+</html>
+
+
